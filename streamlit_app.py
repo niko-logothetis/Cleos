@@ -60,7 +60,6 @@ def send_message():
 
 # Streamlit UI for ChatGPT-like window
 st.image("https://sally-hair-extensions.com/wp-content/uploads/2024/09/BHM.png", use_column_width=True)
-
 st.markdown("<h1 style='text-align: center;'>Willkommen zum Cleos</h1>", unsafe_allow_html=True)
 st.write("Sie können hier Fragen rund um das Thema der Burghauptmannschaft stellen. Sollten Sie einmal nicht weiter kommen, dann bitten Sie mich um Hilfe.")
 
