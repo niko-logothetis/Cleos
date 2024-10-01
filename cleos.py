@@ -1,3 +1,4 @@
+import os
 import requests
 import json
 import gradio as gr
@@ -48,6 +49,9 @@ def chat_response(message, history):
     
     return response
 
+# Get the port provided by Render, default to 7860 for local testing
+port = int(os.environ.get("PORT", 7860))
+
 # Create the Gradio chat interface
 interface = gr.ChatInterface(
     fn=chat_response,
@@ -63,6 +67,7 @@ interface = gr.ChatInterface(
     undo_btn="Letzte Eingabe löschen",
     clear_btn="Clear",
 
-    ).launch()
+    )
 
+interface.launch(server_name="0.0.0.0", server_port=port)
 
