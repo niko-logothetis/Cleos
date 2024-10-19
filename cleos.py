@@ -66,8 +66,8 @@ interface = gr.ChatInterface(
     retry_btn="Erneut senden",
     undo_btn="Letzte Eingabe löschen",
     clear_btn="Clear",
-
+    css="footer {display: none !important;}"  # Add custom CSS to hide the footer
     )
 
-interface.launch(server_name="0.0.0.0", server_port=port)
-
+interface.launch(server_name="0.0.0.0", server_port=port, show_api=False, show_error=False)
+# interface.launch(show_api=False, show_error=False) ### Launch for local run
