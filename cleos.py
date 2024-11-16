@@ -4,10 +4,13 @@ import json
 import gradio as gr
 
 # Set the API URL for the Langflow app
-API_URL = "https://api.langflow.astra.datastax.com/lf/f885cef4-688b-4d3f-9686-14269ff4c163/api/v1/run/d6d67517-7e5d-4258-bec2-e1adce10b711"
+# API_URL = "https://api.langflow.astra.datastax.com/lf/f885cef4-688b-4d3f-9686-14269ff4c163/api/v1/run/d6d67517-7e5d-4258-bec2-e1adce10b711"
+API_URL = "https://langflow.thinkflow-ai.space/api/v1/run/7a253310-9335-4243-99ca-4227dbd7badd?stream=false"
 
 # Application token for authorization
-APPLICATION_TOKEN = "AstraCS:DTNlrfHBNaZGhwAOxQUtjOuo:8e084bc11b7061bc717a600e0b14d098288c96a6529cee67cc7b6fd6478c98eb"
+# APPLICATION_TOKEN = "AstraCS:DTNlrfHBNaZGhwAOxQUtjOuo:8e084bc11b7061bc717a600e0b14d098288c96a6529cee67cc7b6fd6478c98eb"
+
+APPLICATION_TOKEN ="sk-q6C5rkHS03bGt4eGqW83KJwyRjzZ-QUKLa2eLkQ2hDM"
 
 # Function to query the Langflow API
 def query_langflow_api(message):
