@@ -21,7 +21,7 @@ def query_langflow_api(message):
         "input_type": "chat",
     }
     headers = {
-        "Authorization": f"Bearer {APPLICATION_TOKEN}",
+        "x-api-key": APPLICATION_TOKEN,  # Set API key in headers as 'x-api-key'
         "Content-Type": "application/json"
     }
     
@@ -73,4 +73,4 @@ interface = gr.ChatInterface(
     )
 
 interface.launch(server_name="0.0.0.0", server_port=port, show_api=False, show_error=False)
-# interface.launch(show_api=False, show_error=False) ### Launch for local run
+#  interface.launch(show_api=False, show_error=False) ### Launch for local run
